@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rosc Fine Ferretería - Precisión, variedad y soluciones para tus proyectos en el Barrio El Sucre. Herramientas, pinturas, tornillería especializada y material eléctrico.">
+  <title>Rosc Fine Ferretería | Precisión, Variedad y Soluciones</title>
+  <!-- Enlace a estilos CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header / Barra de Navegación
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Logo de Marca -->
+      <a href="#inicio" class="logo" aria-label="Rosc Fine Ferretería - Ir al inicio">
+        <div class="logo-icon-wrap" aria-hidden="true">
+          <!-- Icono Tuerca / Roscado Industrial SVG -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 3.3L17.5 8 12 11.2 6.5 8 12 5.3zm-6 4.4l5 2.9v6.1l-5-3.1V9.7zm7 9V12.6l5-2.9v6.1l-5 2.9z"/>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Rosc<span>Fine</span></span>
+          <span class="logo-tag">Ferretería</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación Suave -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Menú principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#productos" class="nav-link">Productos & Servicios</a>
+        <a href="#beneficios" class="nav-link">Por Qué Elegirnos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Indicador Dinámico de Estado [Abierto / Cerrado] -->
+      <div class="header-actions">
+        <div id="status-indicator" class="status-badge closed" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="status-text">🔴 Cerrado por ahora</span>
+        </div>
+
+        <!-- Botón Móvil Hamburguesa -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Sección Inicio (Hero)
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-layout">
+        <!-- Columna de Información Hero -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            Barrio El Sucre · Asesoría Experta
+          </div>
+
+          <h1 class="hero-title">
+            Rosc Fine <span class="highlight">Ferretería</span>
+          </h1>
+
+          <p class="hero-slogan">
+            "Precisión, variedad y soluciones para tus proyectos"
+          </p>
+
+          <!-- Bloque Informativo Destacado -->
+          <div class="hero-info-card">
+            <!-- Dirección -->
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Ubicación Física</div>
+                <div class="info-value">Calle 10 # 13-50, Barrio El Sucre</div>
+                <div class="info-sub">Punto de venta y despacho directo</div>
+              </div>
+            </div>
+
+            <!-- Horario -->
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Horario de Atención</div>
+                <div class="info-value">Lunes a Sábado de 8:00 a.m. a 6:00 p.m.</div>
+                <div class="info-sub">Domingos y festivos: Cerrado</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary" id="btn-ver-productos">
+              Ver Productos
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contacto" class="btn btn-outline-white">
+              Solicitar Cotización
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna Visual Hero -->
+        <div class="hero-visual-wrap">
+          <div class="hero-image-card">
+            <img src="assets/hero-ferreteria.jpg" alt="Instalaciones y surtido de Rosc Fine Ferretería en El Sucre" width="600" height="440" loading="eager">
+            
+            <!-- Estadísticas Flotantes -->
+            <div class="hero-floating-stat">
+              <div class="stat-item">
+                <div class="stat-number">+2,500</div>
+                <div class="stat-text">Referencias</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-text">Garantía</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <div class="stat-number">Rápido</div>
+                <div class="stat-text">Domicilios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Barra de Confianza y Atributos
+         ========================================================================== -->
+    <div class="trust-bar" id="beneficios">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="trust-text-wrap">
+              <h4>Calidad Certificada</h4>
+              <p>Herramientas y repuestos de marcas líderes.</p>
+            </div>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="trust-text-wrap">
+              <h4>Despacho a Domicilio</h4>
+              <p>Entrega oportuna en el Barrio El Sucre.</p>
+            </div>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="trust-text-wrap">
+              <h4>Asesoría Técnica</h4>
+              <p>Te guiamos en el cálculo de tus materiales.</p>
+            </div>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="trust-text-wrap">
+              <h4>Precios Justos</h4>
+              <p>Cotizaciones claras sin costos ocultos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Sección Productos y Servicios (5 tarjetas en Grid)
+         ========================================================================== -->
+    <section class="section products-section" id="productos">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">Catálogo Especializado</span>
+          <h2 class="section-title">Productos y Servicios de Precisión</h2>
+          <p class="section-subtitle">
+            Contamos con el inventario más completo para profesionales de la construcción, talleres y proyectos del hogar.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Tarjeta 1: Herramientas -->
+          <article class="tarjeta product-card">
+            <div class="card-image-wrap">
+              <img src="assets/herramientas.jpg" alt="Herramientas manuales y eléctricas" class="card-img" width="400" height="180" loading="lazy">
+            </div>
+            <span class="card-tag">Equipamiento Profesional</span>
+            <h3 class="card-title">Herramientas</h3>
+            <p class="card-description">
+              Herramientas manuales y eléctricas de alto rendimiento: taladros percutores, pulidoras, sierras caladoras, juegos de copas, llaves fijas milimétricas y de trinquete para exigencias industriales.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Manuales & Eléctricas</span>
+              <span class="feature-pill">Línea Inalámbrica</span>
+              <span class="feature-pill">Garantía Directa</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Pintura y Acabados -->
+          <article class="tarjeta product-card">
+            <div class="card-image-wrap">
+              <img src="assets/pintura.jpg" alt="Pintura y acabados profesionales" class="card-img" width="400" height="180" loading="lazy">
+            </div>
+            <span class="card-tag">Protección & Estética</span>
+            <h3 class="card-title">Pintura y Acabados</h3>
+            <p class="card-description">
+              Sistemas de color de alto cubrimiento, pinturas vinílicas tipo 1, esmaltes anticorrosivos para metales, selladores para mampostería, brochas profesionales, rodillos antigoteo y masillas.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Sistemas de Color</span>
+              <span class="feature-pill">Anticorrosivos</span>
+              <span class="feature-pill">Accesorios de Aplicación</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3: Tornillería y Anclajes Especializados -->
+          <article class="tarjeta product-card">
+            <div class="card-image-wrap">
+              <img src="assets/tornilleria.jpg" alt="Tornillería y anclajes especializados" class="card-img" width="400" height="180" loading="lazy">
+            </div>
+            <span class="card-tag">Fijación de Alta Resistencia</span>
+            <h3 class="card-title">Tornillería y Anclajes Especializados</h3>
+            <p class="card-description">
+              Amplio stock en pernos hexagonales, tuercas de seguridad autoblocantes, arandelas de presión, chazos metálicos y plásticos, varillas roscadas y tornillería en acero inoxidable y galvanizado.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Pernos & Tuercas</span>
+              <span class="feature-pill">Chazos de Expansión</span>
+              <span class="feature-pill">Inoxidable & Grado 8</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4: Material Eléctrico e Iluminación -->
+          <article class="tarjeta product-card">
+            <div class="card-image-wrap">
+              <img src="assets/electrico.jpg" alt="Material eléctrico e iluminación" class="card-img" width="400" height="180" loading="lazy">
+            </div>
+            <span class="card-tag">Energía Segura</span>
+            <h3 class="card-title">Material Eléctrico e Iluminación</h3>
+            <p class="card-description">
+              Cables y conductores con certificación RETIE, breakers termomagnéticos, tableros de distribución, iluminación LED de bajo consumo, reflectores para exteriores, tomacorrientes y canaletas.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Cables RETIE</span>
+              <span class="feature-pill">Brekes & Tableros</span>
+              <span class="feature-pill">Luces LED Ahorradoras</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 5 (Servicio Destacado): Asesoría Técnica y Domicilios -->
+          <article class="tarjeta product-card featured-service">
+            <div class="featured-badge-top">Servicio Estrella</div>
+            <div class="card-image-wrap featured-img-wrap">
+              <img src="assets/domicilios.jpg" alt="Asesoría Técnica y Domicilios en el Barrio El Sucre" class="card-img" width="400" height="180" loading="lazy">
+            </div>
+            <div class="featured-content">
+              <span class="card-tag">Atención Personalizada</span>
+              <h3 class="card-title">Asesoría Técnica y Domicilios en el Barrio El Sucre</h3>
+              <p class="card-description">
+                ¿No estás seguro de la medida del perno o de la cantidad de cable necesaria? Nuestro equipo de expertos te asesora técnicamente en tus proyectos y coordinamos despachos inmediatos a domicilio directo a tu obra o vivienda en el Barrio El Sucre.
+              </p>
+              <div class="card-features">
+                <span class="feature-pill">Entrega Rápida en El Sucre</span>
+                <span class="feature-pill">Cálculo de Materiales en Obra</span>
+                <span class="feature-pill">Pedidos por Teléfono o WhatsApp</span>
+              </div>
+            </div>
+            <div class="featured-action">
+              <a href="#contacto" class="btn btn-primary">Solicitar Asesoría</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Sección Contacto
+         ========================================================================== -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">Canales de Atención</span>
+          <h2 class="section-title">Contáctanos y Cotiza al Instante</h2>
+          <p class="section-subtitle">
+            Estamos listos para atender tus solicitudes, dudas técnicas y requerimientos de materiales con rapidez y precisión.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Panel de Información de Contacto -->
+          <div class="contact-info-panel">
+            <h3 class="contact-info-title">Rosc Fine en El Sucre</h3>
+            <p class="contact-info-text">
+              Visítanos directamente en nuestro punto de venta o comunícate con nosotros para consultar disponibilidad de referencias y despachos.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Dirección -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Dirección</h4>
+                  <p>Calle 10 # 13-50, Barrio El Sucre</p>
+                </div>
+              </div>
+
+              <!-- Horario -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Horario de Atención</h4>
+                  <p>Lunes a Sábado: 8:00 a.m. a 6:00 p.m.</p>
+                  <small class="contact-badge-info">Domingos y festivos: Cerrado</small>
+                </div>
+              </div>
+
+              <!-- Teléfono / WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <h4>Línea de Atención / WhatsApp</h4>
+                  <p>+57 (317) 654-2325</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Llamado a la acción rápido -->
+            <div class="quick-callout">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <p>
+                <strong>¿Requieres un pedido urgente en El Sucre?</strong> Envíanos un mensaje o llámanos directamente para coordinar tu envío.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formulario Limpio -->
+          <div class="contact-form-card">
+            <div class="form-header">
+              <h3>Envíanos un Mensaje</h3>
+              <p>Diligencia el formulario y te responderemos en el menor tiempo posible.</p>
+            </div>
+
+            <!-- Contenedor para Mensajes Dinámicos de Error o Éxito -->
+            <div id="form-feedback" class="form-message-container" role="alert" aria-live="polite"></div>
+
+            <form id="formulario-contacto" novalidate>
+              <!-- Campo: Nombre Completo -->
+              <div class="form-group">
+                <label for="nombre" class="form-label">
+                  Nombre completo <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="nombre" 
+                  name="nombre" 
+                  class="form-input" 
+                  placeholder="Ej. Juan Pérez" 
+                  required 
+                  autocomplete="name"
+                  aria-describedby="error-nombre"
+                >
+                <span class="field-error" id="error-nombre"></span>
+              </div>
+
+              <!-- Campo: Teléfono / WhatsApp (Opcional) -->
+              <div class="form-group">
+                <label for="telefono" class="form-label">
+                  Teléfono / WhatsApp <span class="optional">(opcional)</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="telefono" 
+                  name="telefono" 
+                  class="form-input" 
+                  placeholder="Ej. 317 654 2325" 
+                  autocomplete="tel"
+                >
+              </div>
+
+              <!-- Campo: Mensaje -->
+              <div class="form-group">
+                <label for="mensaje" class="form-label">
+                  Mensaje <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="mensaje" 
+                  name="mensaje" 
+                  class="form-textarea" 
+                  rows="4" 
+                  placeholder="Escribe aquí las herramientas, pernos o materiales que deseas cotizar..." 
+                  required
+                  aria-describedby="error-mensaje"
+                ></textarea>
+                <span class="field-error" id="error-mensaje"></span>
+              </div>
+
+              <!-- Botón de Envío Estilizado -->
+              <button type="submit" id="btn-enviar" class="btn btn-primary btn-submit">
+                <span>Enviar Mensaje</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer (Pie de Página)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna Marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <div class="logo-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 3.3L17.5 8 12 11.2 6.5 8 12 5.3zm-6 4.4l5 2.9v6.1l-5-3.1V9.7zm7 9V12.6l5-2.9v6.1l-5 2.9z"/>
+              </svg>
+            </div>
+            <div class="logo-text-wrap">
+              <span class="logo-name">Rosc<span>Fine</span></span>
+              <span class="logo-tag">Ferretería</span>
+            </div>
+          </a>
+          <p class="footer-slogan">
+            "Precisión, variedad y soluciones para tus proyectos"
+          </p>
+        </div>
+
+        <!-- Columna Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">› Inicio</a></li>
+            <li><a href="#productos" class="footer-link">› Catálogo de Productos</a></li>
+            <li><a href="#beneficios" class="footer-link">› Por Qué Elegirnos</a></li>
+            <li><a href="#contacto" class="footer-link">› Contacto & Ubicación</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna Ubicación y Horario -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Punto de Atención</h4>
+          <div class="footer-location-info">
+            <div class="footer-info-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Calle 10 # 13-50, Barrio El Sucre</span>
+            </div>
+            <div class="footer-info-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Lunes a Sábado: 8:00 a.m. a 6:00 p.m.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Inferior de Derechos Reservados -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rosc Fine Ferretería. Todos los derechos reservados.</p>
+        <p>Precisión, variedad y soluciones para tus proyectos en el Barrio El Sucre.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Validación y Lógica de Horario -->
+  <script src="js/contacto.js"></script>
+</body>
+</html>
